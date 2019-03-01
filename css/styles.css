@@ -101,3 +101,6 @@ img{
     width: 70px;
     text-align: center;
 }
+.btn2{
+    display: none;
+}
