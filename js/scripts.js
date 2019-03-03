@@ -44,6 +44,10 @@
       $("#p2-name").text(p1Name);
     });
 
+   $("#newGame").click(function(){
+    $(".game").hide();
+    $(".opening".show())
+   }
 
 
 
