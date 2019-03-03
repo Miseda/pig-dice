@@ -40,13 +40,13 @@
     $("#entry").click(function(){
     $(".game").show();
       $(".opening").hide();
-      $("#p1-name").text(p1Name);
-      $("#p2-name").text(p1Name);
+      // $("#p1-name").text(p1Name);
+      // $("#p2-name").text(p1Name);
     });
 
    $("#newGame").click(function(){
     $(".game").hide();
-    $(".opening".show();
+    $(".opening").show();
   });
 
 
