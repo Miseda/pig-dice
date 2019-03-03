@@ -33,20 +33,36 @@
     $("#hold").click(function(){
       $(".btn1").hide();
       $(".btn2").show();
+      $("#hold2").show();
+      $("#hold").hide();
     })
-    var p1Name = $("input#p1Name").val();
-    var p2Name = $("input#p2Name").val();
+
+    $("#hold2").click(function(){
+      $(".btn1").show();
+      $(".btn2").hide();
+      $("#hold").show();
+      $("#hold2").hide();
+
+
+    });
+    $("form#gaming").submit(function(event){
+      event.preventDefault();
+    });
+    var p1Name = parseInt($("input#p1N").val());
+    var p2Name = parseInt($("input#p2N").val());
 
     $("#entry").click(function(){
     $(".game").show();
-      $(".opening").hide();
-      // $("#p1-name").text(p1Name);
-      // $("#p2-name").text(p1Name);
+    $(".opening").hide();
+    $("#p1-name").text(p1Name);
+    $("#p2-name").text(p1Name);
     });
 
    $("#newGame").click(function(){
     $(".game").hide();
     $(".opening").show();
+
+
   });
 
 

@@ -97,7 +97,9 @@ button:hover i { margin-right: 20px; }
 button:focus {
     outline: none;
 }
-
+#hold2 {
+  display: none;
+}
 .btn-hold { top: 467px;}
 .btn-roll { top: 403px;}
 .btn-new { top: 350px;}
