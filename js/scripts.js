@@ -34,13 +34,14 @@
       $(".btn1").hide();
       $(".btn2").show();
     })
-    var p1Name = $("input#player1name").val();
-    var p2Name = $("input#player2name").val();
-    $("#entry").click(function() {
-      $(".game").show();
+    var p1Name = $("input#p1Name").val();
+    var p2Name = $("input#p2Name").val();
+
+    $("#entry").click(function(){
+    $(".game").show();
       $(".opening").hide();
       $("#p1-name").text(p1Name);
-      $("#p2-name").text(p2Name);
+      $("#p2-name").text(p1Name);
     });
 
 
