@@ -8,11 +8,32 @@
     <title>Pig Dice</title>
 </head>
 <body>
+  <div class ="container">
+    <div class="opening">
+    <form id="gaming">
     <img src="img/dice.jpeg" alt="A dice picture.">
     <h1>PIG DICE</h1>
+
+    <div class="form-group">
+      <lable name="player1">PLAYER 1:</lable>
+      <input type="text" required class="form-control" id="player1name"></input>
+    </div>
+
+    <div class="form-group">
+      <lable name+"player2">PLAYER2:</lable>
+      <input type="text" required class="form-control" id="player2name"></input>
+    </div>
+    </form>
+    <button type="submit" class="btn" id="entry">Start Game</button>
+    </div>
+
+    <div class="game">
     <div class="wrapper">
+      <img src="img/dice.jpeg" alt="A dice picture.">
+      <h1>PIG DICE</h1>
+
         <div class="player1">
-            <div class="playertitle" id=p1-name>PLAYER 1</div>
+            <div class="playertitle" id="p1-name">PLAYER 1</div>
             <div class="playerconsole" id="p1-score">0</div>
             <div class="current">
             <div class="current-title" id="c-name">CURRENT</div>
@@ -35,6 +56,8 @@
     <button class="btn-roll"  type="button"  id="rollDice">Roll dice</button>
     </div>
     </div>
-    
+    <button class="btn-hold" type="button" id="hold" >Hold</button>
+  </div>
+  </div>
 </body>
 </html>

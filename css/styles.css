@@ -46,7 +46,7 @@ body {
     font-weight: 100;
     margin-top: 20px;
     margin-bottom: 10px;
-    position: relative; 
+    position: relative;
 }
 
 .playerconsole{
@@ -97,6 +97,9 @@ button:hover i { margin-right: 20px; }
 button:focus {
     outline: none;
 }
+
+.btn-hold { top: 467px;}
+
 img{
     width: 70px;
     text-align: center;
@@ -104,4 +107,8 @@ img{
 
 .btn2{
     display: none;
+}
+
+.game {
+  display: none;
 }
