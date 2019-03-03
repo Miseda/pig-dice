@@ -46,8 +46,8 @@
 
    $("#newGame").click(function(){
     $(".game").hide();
-    $(".opening".show())
-   }
+    $(".opening".show();
+  });
 
 
 
