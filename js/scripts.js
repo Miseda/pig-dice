@@ -48,14 +48,14 @@
     $("form#gaming").submit(function(event){
       event.preventDefault();
     });
-    var p1Name = parseInt($("input#p1N").val());
-    var p2Name = parseInt($("input#p2N").val());
+    var p1Name = $("input#p1N").val();
+    var p2Name = $("input#p2N").val();
 
     $("#entry").click(function(){
     $(".game").show();
     $(".opening").hide();
-    $("#p1-name").text(p1Name);
-    $("#p2-name").text(p1Name);
+    $("ul#output").append("<li>" + p1Name + "</li>");
+    $("#p2-name").append(p1Name);
     });
 
    $("#newGame").click(function(){
