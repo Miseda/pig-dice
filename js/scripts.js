@@ -1,21 +1,19 @@
  function dice(){
     return Math.floor(Math.random() *6) +1;
 }
+var total = [];
+
    $(document).ready(function() {
    $("#roll").click(function(){
     var num1 = dice();
+    var arrays = total.push(num1);
     $("#p1-score").text(num1)
-    $("#c0-score").text(total)
-    var total= 0;
-    var num1A= [dice()];
+    $("#c0-score").text(add)
+    var add= 0;
 
     if(num1 == 1){
         $(".btn2").show();
         $(".btn1").hide();
-    }else{
-      num1A.forEach(function(num){
-        total += num;
-      });
     }
 })
 
@@ -47,16 +45,16 @@
     });
     $("form#gaming").submit(function(event){
       event.preventDefault();
+      var p1Name = $("input#p1N").val();
+      var p2Name = $("input#p2N").val();
+      $("#p1-name").text(p1Name);
+      $("#p2-name").text(p2Name);
+      $(".game").show();
+      $(".opening").hide();
     });
-    var p1Name = $("input#p1N").val();
-    var p2Name = $("input#p2N").val();
 
-    $("#entry").click(function(){
-    $(".game").show();
-    $(".opening").hide();
-    $("ul#output").append("<li>" + p1Name + "</li>");
-    $("#p2-name").append(p1Name);
-    });
+
+
 
    $("#newGame").click(function(){
     $(".game").hide();

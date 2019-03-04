@@ -30,8 +30,7 @@ body {
     background-color:black;
 }
 
-.player1,
-.player2 {
+.player1, .player2 {
     width: 50%;
     float: left;
     height: 600px;
