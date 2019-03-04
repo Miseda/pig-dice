@@ -29,9 +29,9 @@ var total2 = [];
         add = 0
         empty(total)
         $("#c0-score").text(add);
-    }else if (num1 == 100){
-      alert("You are the winner !!!")
-    }
+    }else if (add >= 100)
+      alert("You are the winner!!!")
+
 })
 
 
@@ -54,8 +54,10 @@ var total2 = [];
         add2 = 0
         empty(total2);
         $("#c1-score").text(add2)
-    }else if (num2 == 100){
-      alert("You are the winner!!!!")
+    }
+    else if ( adds >= 100)
+      alert("You are the winner!!!")
+
     })
 
     document.getElementById("hold")
@@ -98,9 +100,10 @@ var total2 = [];
     $(".btn2").hide();
     total.length = 0;
     total2.length = 0;
+    function resetFields() {
     $("#p1N").val("");
     $("#p2N").val("");
-
+}
 
   });
 
