@@ -1,6 +1,12 @@
  function dice(){
     return Math.floor(Math.random() *6) +1;
 }
+function empty(){
+  total = [];
+  total2 = [];
+}
+
+
 var total = [];
 var total2 = [];
 
@@ -21,6 +27,7 @@ var total2 = [];
         $(".btn2").show();
         $(".btn1").hide();
         add = 0
+        empty(total)
         $("#c0-score").text(add);
     }
 })
@@ -43,6 +50,7 @@ var total2 = [];
         $(".btn1").show();
         $(".btn2").hide();
         add2 = 0
+        empty(total2);
         $("#c1-score").text(add2)
     }
     })
