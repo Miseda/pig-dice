@@ -2,6 +2,7 @@
     return Math.floor(Math.random() *6) +1;
 }
 var total = [];
+var total2 = [];
 
    $(document).ready(function() {
    $("#roll").click(function(){
@@ -28,10 +29,21 @@ var total = [];
 
     $("#rollDice").click(function(){
     var num2 = dice();
+    total2.push(num2);
+    var adds = 0;
+
+    total2.forEach(function(tots){
+    adds += tots ;
+    });
     $("#p2-score").text(num2)
+    $("#c1-score").text(adds);
+
+
     if(num2 == 1){
         $(".btn1").show();
         $(".btn2").hide();
+        add2 = 0
+        $("#c1-score").text(add2)
     }
     })
 
