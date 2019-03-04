@@ -6,16 +6,24 @@ var total = [];
    $(document).ready(function() {
    $("#roll").click(function(){
     var num1 = dice();
-    var arrays = total.push(num1);
+    total.push(num1);
+    var add= 0;
+    total.forEach(function(tot){
+      add += tot
+    });
     $("#p1-score").text(num1)
     $("#c0-score").text(add)
-    var add= 0;
+
+
 
     if(num1 == 1){
         $(".btn2").show();
         $(".btn1").hide();
+        add = 0
+        $("#c0-score").text(add);
     }
 })
+
 
 
     $("#rollDice").click(function(){
