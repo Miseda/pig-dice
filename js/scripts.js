@@ -30,7 +30,7 @@ var total2 = [];
         empty(total)
         $("#c0-score").text(add);
     }else if (num1 == 100){
-      
+      alert("You are the winner !!!")
     }
 })
 
